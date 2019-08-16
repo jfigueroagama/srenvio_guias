@@ -12,6 +12,7 @@ namespace :load do
                      :width => label['parcel']['width'],
                      :height => label['parcel']['height'],
                      :weight => label['parcel']['weight'],
+                     :total_weight => "",
                      :distance_unit => label['parcel']['distance_unit'],
                      :mass_unit => label['parcel']['mass_unit'])
             label.save!

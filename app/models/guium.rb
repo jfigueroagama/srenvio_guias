@@ -1,2 +1,0 @@
-class Guium < ApplicationRecord
-end
