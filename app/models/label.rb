@@ -1,8 +1,8 @@
 class Label < ApplicationRecord
     after_create :get_total_weight
 
-    validates :tracking_number, :carrier, :lenght, :width, :height, :weight,
-              :total_weight, :mass_unit, presence: true
+    validates_presence_of :tracking_number, :carrier, :length, :width, :height, :weight,
+              :total_weight, :mass_unit
 
     private
     def get_total_weight
