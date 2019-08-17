@@ -1,6 +1,9 @@
 class Label < ApplicationRecord
     after_create :get_total_weight
 
+    validates :tracking_number, :carrier, :lenght, :width, :height, :weight,
+              :total_weight, :mass_unit, presence: true
+
     private
     def get_total_weight
         volume_weight = ((length*width*height).to_f/5000).ceil
