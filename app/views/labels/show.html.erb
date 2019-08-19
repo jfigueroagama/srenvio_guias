@@ -1,0 +1,16 @@
+
+ <h1>Label</h1>
+
+ <p>  Tracking Number <%= @label.tracking_number %></p>
+ <p>  Carrier <%= @label.carrier %></p>
+ <p>  Length <%= @label.length %></p>
+ <p>  Width <%= @label.width %></p>
+ <p>  Height <%= @label.height %></p>
+ <p>  Weight <%= @label.weight %></p>
+ <% if @label.overweight %>
+ <p>  Overweight <%= @label.overweight %></p>
+ <% else %>
+ <p>  Overweight is comming </p>
+ <% end %>
+
+ <p ><%= button_to "Back to Labels", labels_path, method: :get, class:"btn btn-primary" %> </p>

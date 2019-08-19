@@ -26,6 +26,7 @@
         <td><%= label.weight %></td>
         <td style='color:red'><%= label.total_weight %></td>
         <td style='color:red'><%= label.mass_unit %></td>
+        <td><%= button_to "Overweight", label_path(label), method: :get, class:"btn btn-primary" %></td>
       </tr>
     <% end %>
   </tbody>

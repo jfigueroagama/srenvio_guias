@@ -58,6 +58,11 @@ p {
   line-height: 1.7em;
 }
 
+.nav-link:hover,
+.nav-link:active {
+  color: red !important;
+}
+
 /* header */
 
 #logo {
